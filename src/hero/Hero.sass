@@ -1,0 +1,83 @@
+.hero
+  background-color: #020303
+  color: whitesmoke
+  height: 100vh
+  max-width: 100vw
+  padding-top: 90px
+
+.hero__img
+  animation: changeBorderColor 6s ease-in-out infinite , float 6s ease-in-out infinite
+  border: 2px solid #e58400
+  -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004)
+  height: 300px
+  object-fit: cover
+  transform: perspective(800px) rotateY(25deg)
+  transform-origin: center
+  transition: 0.5s
+
+  &:hover
+    transform: perspective(800px) rotateY(-25deg)
+
+.hero__content
+  align-items: center
+  display: flex
+  height: 90vh
+  justify-content: space-around
+  margin: 0 auto
+  width: 90vw
+
+  p
+    font-size: 2rem
+    text-align: center
+
+.stacks
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  max-width: 100vw
+
+.stack__img
+  animation: slideUp 1s linear , appear 1s ease-in-out forwards
+  height: 80px
+  margin: 20px
+  opacity: 0
+
+  @for $i from 2 through 30
+      &:nth-of-type(#{$i})
+        animation-delay: 0.07s * $i
+
+@media screen and (max-width: 768px)
+  .hero
+    padding-top: 40px
+
+  .hero__img
+    display: none
+
+  .hero__content
+    p
+      font-size: 1.5rem
+
+  .hero__salute, .stacks
+    margin-inline: auto
+    width: 70vw
+
+  .stack__img
+    height: 30px
+    margin: 6px
+
+@media (min-width: 768px) and (max-width: 1024px)
+  .hero
+    padding-top: 50px
+
+  .hero__img
+    height: 250px
+    margin: 40px
+
+  .hero__content
+    width: 90vw
+
+    p
+      font-size: 1.8rem
+
+  .stack__img
+    height: 50px
