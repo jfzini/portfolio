@@ -33,7 +33,7 @@ export default function Hero() {
           </p>
           <div className="stacks">
             {stacks.map(({name, icon}) => (
-              <StackImg src={icon} alt={name} />
+              <StackImg src={icon} alt={name} key={name} />
             ))}
           </div>
         </div>
