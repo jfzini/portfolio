@@ -1,24 +1,30 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.sass';
+import { Button, TextField } from '@mui/material';
 
 export default function Contact() {
   const form = useRef();
   const [validate, setValidate] = useState(true);
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
+  const [thanks, setThanks] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
       .sendForm('service_oknbaig', 'template_r9lgnro', form.current, 'SyGNesskWg3yxFHqL')
       .then((result) => {
-        console.log(result.text);
         e.target.reset();
       }, (error) => {
         console.log(error.text);
       });
+    setThanks(true);
   };
 
   const validateEmail = ({ target: { value } }) => {
+    setEmail(value);
     const regex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g;
     if (regex.test(value)) {
       setValidate(false);
@@ -27,41 +33,70 @@ export default function Contact() {
     }
   };
 
+  const resetForm = (e) => {
+    sendEmail(e);
+    setValidate(true);
+    setEmail('');
+    setName('');
+    setMessage('');
+  };
+
   return (
     <section className="section__container section__container--even" id="contact">
       <h2>{'<Contact me />'}</h2>
       <form ref={ form } onSubmit={ sendEmail }>
-        <label htmlFor="user_name">Name</label>
-        <input
-          type="text"
+        <TextField
           name="user_name"
           id="user_name"
-          className="form__input"
-          placeholder="Your name"
+          label="Your name"
+          variant='outlined'
+          color='warning'
+          InputLabelProps={{ style: { color: 'lightgray' } }}
+          InputProps={{ style: { color: 'white' } }}
+          margin='normal'
+          onChange={ (e) => setName(e.target.value) }
+          value={ name }
         />
-        <label htmlFor="user_email">E-mail</label>
-        <input
-          type="email"
+        <TextField
           name="user_email"
           id="user_email"
-          className="form__input"
-          placeholder="Your e-mail"
+          label="Your e-mail"
           onChange={ (e) => validateEmail(e) }
+          color='warning'
+          variant='outlined'
+          InputLabelProps={{ style: { color: 'lightgray' } }}
+          InputProps={{ style: { color: 'white' } }}
+          margin='normal'
+          placeholder='example@example.com'
+          value={ email }
+          required
         />
-        <label htmlFor="message">Message</label>
-        <textarea
+        <TextField
+          label="Your message"
           name="message"
           id="message"
-          className="form__input"
+          color='warning'
           placeholder="Type your message here"
+          variant='outlined'
+          InputLabelProps={{ style: { color: 'lightgray' } }}
+          InputProps={{ style: { color: 'white' } }}
+          multiline
+          minRows={ 4 }
+          margin='normal'
+          onChange={ (e) => setMessage(e.target.value) }
+          value={ message }
+          required
         />
-        <input
-          type="submit"
+        <Button
+          variant='contained'
+          color='warning'
           value="Send"
-          className="form__submit"
           disabled={ validate }
-        />
+          type="submit"
+          onClick={(e) => resetForm(e) }
+        >Submit</Button>
       </form>
+      { thanks && <p className='thanks-message'>Thanks for your message!</p> }
     </section>
   );
 }
