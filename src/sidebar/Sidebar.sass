@@ -1,0 +1,32 @@
+.sidebar 
+  animation: changeBorderColor 6s ease-in-out infinite
+  border-radius: 10px
+  display: flex
+  height: 50px
+  width: 100px
+  justify-content: space-around
+  align-items: center
+  left: 1vw
+  padding: 10px 5px 5px 5px
+  position: fixed
+  bottom: 10px
+  z-index: 0
+
+  a
+    color: #fff
+    font-size: 2rem
+    
+    &:hover
+      color: #00ff80
+
+@media screen and ( max-width : 768px ) 
+  .sidebar 
+    border-radius: 5px
+    height: 100px
+    padding: 5px
+
+@media ( min-width : 768px ) and ( max-width : 1024px ) 
+  .sidebar 
+    border-radius: 5px
+    height: 120px
+    padding: 7px
