@@ -2,8 +2,10 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.sass';
 import { Button, TextField } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
+  const { t } = useTranslation();
   const form = useRef();
   const [validate, setValidate] = useState(true);
   const [email, setEmail] = useState('');
@@ -43,12 +45,12 @@ export default function Contact() {
 
   return (
     <section className="section__container section__container--even" id="contact">
-      <h2>{'<Contact me />'}</h2>
+      <h2>{`<${t('Contact me')} />`}</h2>
       <form ref={ form } onSubmit={ sendEmail }>
         <TextField
           name="user_name"
           id="user_name"
-          label="Your name"
+          label={t("Your name")}
           variant='outlined'
           color='warning'
           InputLabelProps={{ style: { color: 'lightgray' } }}
@@ -60,23 +62,23 @@ export default function Contact() {
         <TextField
           name="user_email"
           id="user_email"
-          label="Your e-mail"
+          label={t("Your e-mail")}
           onChange={ (e) => validateEmail(e) }
           color='warning'
           variant='outlined'
           InputLabelProps={{ style: { color: 'lightgray' } }}
           InputProps={{ style: { color: 'white' } }}
           margin='normal'
-          placeholder='example@example.com'
+          placeholder={t('example@example.com')}
           value={ email }
           required
         />
         <TextField
-          label="Your message"
+          label={t("Your message")}
           name="message"
           id="message"
           color='warning'
-          placeholder="Type your message here"
+          placeholder={t("Type your message here")}
           variant='outlined'
           InputLabelProps={{ style: { color: 'lightgray' } }}
           InputProps={{ style: { color: 'white' } }}
@@ -94,7 +96,7 @@ export default function Contact() {
           disabled={ validate }
           type="submit"
           onClick={(e) => resetForm(e) }
-        >Submit</Button>
+        >{t('Submit')}</Button>
       </form>
       { thanks && <p className='thanks-message'>Thanks for your message!</p> }
     </section>

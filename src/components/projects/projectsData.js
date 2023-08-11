@@ -15,7 +15,7 @@ export const projects = [
   },
   {
     title: 'Music Snippets',
-    description: 'Fully responsive app that allows the user to search for artists and songs, and to save them as favorites. They can also edit their profile in the app.',
+    description: 'Fully responsive app that allows the user to search for artists and songs, to save them as favorites and edit their profile in the app.',
     gitHubUrl: 'https://github.com/jfzini/Zini-Tunes',
     deployedUrl: 'https://music-snippets.vercel.app/',
     videoUrl: '',
@@ -31,7 +31,7 @@ export const projects = [
   },
   {
     title: 'Top Trumps Drag',
-    description: `Inspired by the Top Trumps games, I developed this one starring drag queens from the reality show "RuPaul's Drag Race". It was made with React and class components, to showcase the ability to work with legacy projects.`,
+    description: `Inspired by the Top Trumps games, I developed this one starring drag queens from the reality show 'RuPaul's Drag Race'. It was made with React and class components, to showcase the ability to work with legacy projects.`,
     gitHubUrl: 'https://github.com/jfzini/top_trumps_drag',
     deployedUrl: 'https://top-trumps-drag.vercel.app/',
     videoUrl: 'https://www.youtube.com/embed/JSxDvSl0ceA',
@@ -39,7 +39,7 @@ export const projects = [
   },
   {
     title: 'Solar System',
-    description: 'Simple landing page, made with React, about space missions in our solar system. All animations were made using pure CSS, to explore its animations.',
+    description: 'Simple landing page, made with React, about space missions in our solar system. All animations were made using pure CSS, to explore its possibilities.',
     gitHubUrl: 'https://github.com/jfzini/solar-system',
     deployedUrl: 'https://solar-system-rho-lac.vercel.app/',
     videoUrl: 'https://www.youtube.com/embed/4GuyL_BArd8',

@@ -42,7 +42,7 @@ export default function BasicMenu() {
       >
         <Link href='#hero' underline='none' color='inherit'>
           <MenuItem onClick={handleClose}>
-            Home
+            {t('Home')}
           </MenuItem>
         </Link>
         <Link href='#projects' underline='none' color='inherit'>

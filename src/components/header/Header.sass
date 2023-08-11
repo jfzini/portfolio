@@ -6,11 +6,31 @@ header
   font-size: 1.2rem
   font-weight: 400
   justify-content: space-between
+  align-items: center
   margin: 0 auto
   padding: 30px 60px
   position: fixed
   width: 100vw
   z-index: 2
+
+.language-switcher
+  border: none
+  background-color: transparent
+  margin-inline: 10px
+  cursor: pointer
+  padding-bottom: 5px
+  
+  img
+    display: block
+    height: 40px
+    width: 40px
+    transition: all 0.2s linear
+
+    &:hover
+      transform: scale(1.1)
+
+.active-switcher
+    box-shadow: 0 3px 0 #e58400
 
 .animated__span
   animation: changeColor 6s ease-in-out infinite
@@ -49,3 +69,24 @@ header a
 
   span
     animation: changeColor 2s ease-in-out infinite
+
+@media screen and ( max-width : 768px )
+
+  header
+    padding: 30px 20px
+
+  .language-switcher
+    border: none
+    background-color: transparent
+    margin-inline: 5px
+    cursor: pointer
+    padding-bottom: 3px
+    
+    img
+      display: block
+      height: 25px
+      width: 25px
+      transition: all 0.2s linear
+
+  .active-switcher
+      box-shadow: 0 2px 0 #e58400

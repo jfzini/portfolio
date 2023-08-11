@@ -2,8 +2,14 @@
   background-color: transparent
   height: 550px
   align-self: center
-  max-width: 80dvw
+  max-width: 90dvw
   margin-top: 40px
+  overflow: hidden
+
+.swiper-slide
+  display: flex
+  justify-content: center
+  align-items: center
 
 .swiper-slide-text-content
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.25))
@@ -16,11 +22,6 @@
   padding: 0 10% 0 4%
   position: absolute
   left: 50%
-
-.swiper-slide
-  display: flex
-  justify-content: center
-  align-items: center
 
 .carousel__img
   min-height: 100%
@@ -52,6 +53,7 @@
 
   .mySwiper
     height: 280px
+    max-width: 100dvw
 
   .project__title
     font-size: 1.5rem
@@ -66,8 +68,20 @@
       font-size: 1.5rem
 
 @media screen and ( max-width : 768px )
+  .mySwiper
+    height: 25vh
+    max-width: 100dvw
+
+  .project__title
+    font-size: 1rem
+
+@media screen and ( max-width : 480px )
+  .mySwiper
+    height: 18vh
+    max-width: 100dvw
+
   .project__title
     font-size: 1rem
 
   .project__description
-    font-size: 0.7rem
+    display: none

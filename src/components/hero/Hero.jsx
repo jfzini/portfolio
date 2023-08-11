@@ -3,8 +3,11 @@ import './Hero.sass';
 import heroImg from '../../images/logo-zini.png';
 import { stacks } from './stacks';
 import Stack from './Stack';
+import { useTranslation } from 'react-i18next';
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section className="hero" id="hero">
       <div className="hero__content">
@@ -22,7 +25,7 @@ export default function Hero() {
           <p
             className="hero__salute"
           >
-            Hi, I&apos;m Zini! Software developer ready to work with:
+            {t('Hi, I\'m Zini! Software developer ready to work with:')}
           </p>
           <div className="stacks">
             {stacks.map(({name, icon}) => (

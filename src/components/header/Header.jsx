@@ -4,6 +4,7 @@ import { Button } from '@mui/material';
 import BasicMenu from './Menu';
 import { GitHub, LinkedIn } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
+import LangSwitcher from './LangSwitcher';
 
 export default function HeaderPortfolio() {
   const { t } = useTranslation();
@@ -28,6 +29,7 @@ export default function HeaderPortfolio() {
 
   return (
     <header>
+      <LangSwitcher />
       <a href="#hero">
         <p className="mark appear">
           {'<'}
@@ -43,7 +45,7 @@ export default function HeaderPortfolio() {
         <nav>
           <ul className={`navbar ${showMenu ? 'show-menu' : ''}`}>
             <li className="appear slide-down">
-              <a href="#hero">Home</a>
+              <a href="#hero">{t('Home')}</a>
             </li>
             <li className="appear slide-down">
               <a href="#projects">{t('Projects')}</a>
