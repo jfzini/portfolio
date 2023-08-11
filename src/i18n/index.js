@@ -5,7 +5,7 @@ import enUS from './locales/en/en-us.json';
 
 const resources = {
   'pt-BR': ptBR,
-  'en-US': enUS
+  'en-US': enUS,
 };
 
 i18n
