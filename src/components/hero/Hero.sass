@@ -45,7 +45,7 @@
 
   @for $i from 2 through 30
       &:nth-of-type(#{$i})
-        animation-delay: 0.07s * $i
+        animation-delay: 0.08s * $i
 
 .stack__img
   height: 80px
@@ -77,12 +77,14 @@
       font-size: 1.5rem
 
   .hero__salute, .stacks
-    margin-inline: auto
-    width: 70vw
+    width: 80vw
+
+  .stack__container
+    margin: 10px
 
   .stack__img
     height: 30px
-    margin: 6px
+    margin: 0px
 
 @media (min-width: 768px) and (max-width: 1024px)
   .hero

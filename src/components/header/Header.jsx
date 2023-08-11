@@ -3,9 +3,14 @@ import './Header.sass';
 import { Button } from '@mui/material';
 import BasicMenu from './Menu';
 import { GitHub, LinkedIn } from '@mui/icons-material';
+import { useTranslation } from 'react-i18next';
+import LangSwitcher from './LangSwitcher';
 
 export default function HeaderPortfolio() {
+  const { t } = useTranslation();
+
   const [showMenu, setShowMenu] = useState(false);
+
   useEffect(() => {
     const isMobileDevice = () => {
       return window.innerWidth <= 768;
@@ -24,6 +29,7 @@ export default function HeaderPortfolio() {
 
   return (
     <header>
+      <LangSwitcher />
       <a href="#hero">
         <p className="mark appear">
           {'<'}
@@ -39,16 +45,16 @@ export default function HeaderPortfolio() {
         <nav>
           <ul className={`navbar ${showMenu ? 'show-menu' : ''}`}>
             <li className="appear slide-down">
-              <a href="#hero">Home</a>
+              <a href="#hero">{t('Home')}</a>
             </li>
             <li className="appear slide-down">
-              <a href="#projects">Projects</a>
+              <a href="#projects">{t('Projects')}</a>
             </li>
             <li className="appear slide-down">
-              <a href="#about">About</a>
+              <a href="#about">{t('About')}</a>
             </li>
             <li className="appear slide-down">
-              <a href="#contact">Contact</a>
+              <a href="#contact">{t('Contact')}</a>
             </li>
           </ul>
         </nav>

@@ -19,6 +19,7 @@ import chaiIcon from '../../images/stacks/chai.png'
 import sinonIcon from '../../images/stacks/sinon.png'
 import sassIcon from '../../images/stacks/sass.png'
 import viteIcon from '../../images/stacks/vite.png'
+import i18nIcon from '../../images/stacks/i18next.png'
 
 export const stacks = [
   {
@@ -68,6 +69,10 @@ export const stacks = [
   {
     name: 'Material UI',
     icon: muiIcon
+  },
+  {
+    name: 'i18next',
+    icon: i18nIcon
   },
   {
     name: 'Node.js',

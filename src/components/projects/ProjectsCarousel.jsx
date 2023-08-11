@@ -1,21 +1,21 @@
 import React, { useEffect, useRef } from 'react';
-// Import module components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { GitHub, OpenInNew } from '@mui/icons-material';
 import AOS from 'aos';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-creative';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './ProjectsCarousel.sass';
 
-// import required modules
 import { Autoplay, EffectCreative, Navigation, Pagination } from 'swiper/modules';
+import { useTranslation } from 'react-i18next';
 import { projects } from './projectsData';
 
 export default function ProjectsCarousel() {
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   });
@@ -56,8 +56,8 @@ export default function ProjectsCarousel() {
           <SwiperSlide key={title} className="swiper-slide">
             <img src={imgSrc} alt={title} className="carousel__img" />
             <div className="swiper-slide-text-content" data-aos="fade-left">
-              <h4 className="project__title">{title}</h4>
-              <p className="project__description">{description}</p>
+              <h4 className="project__title">{t(title)}</h4>
+              <p className="project__description">{t(description)}</p>
               <div className="project__nav">
                 <a href={gitHubUrl} target="_blank">
                   <GitHub fontSize="inherit" />
