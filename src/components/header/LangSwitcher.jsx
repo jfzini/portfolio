@@ -30,6 +30,7 @@ export default function LangSwitcher() {
     <div>
       {languages.map(({ code, name, flag }) => (
         <button
+          key={code}
           onClick={() => changeLanguage(code)}
           className={
             language === code

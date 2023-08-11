@@ -3,6 +3,7 @@ import snippetsHero from '../../images/projects/snippets-hero.png';
 import managerHero from '../../images/projects/manager-hero.png';
 import dragHero from '../../images/projects/drag-hero.png';
 import solarHero from '../../images/projects/solar-system-hero.png';
+import walletHero from '../../images/projects/wallet-hero.png';
 
 export const projects = [
   {
@@ -22,6 +23,14 @@ export const projects = [
     imgSrc: snippetsHero
   },
   {
+    title: 'Trip Wallet',
+    description: "This project is a simulation of a wallet, where you can add expenses, convert the spent currencies to Brazilian Real, and view a table with the total expenses. The development was carried out using Redux, React, React Router, and Middlewares for handling asynchronous actions. The tests were developed with React Testing Library.",
+    gitHubUrl: 'https://github.com/jfzini/trip-wallet',
+    deployedUrl: 'https://trip-wallet-project.vercel.app/',
+    videoUrl: '',
+    imgSrc: walletHero
+  },
+  {
     title: 'Talker Manager',
     description: 'This is a back-end project that allows the user to create, edit and delete (CRUD) talkers for an event. It was made with Node.js, Express, Docker and MySQL. It follows a layered architecture, with a service layer, a controller layer and a model layer.',
     gitHubUrl: 'https://github.com/jfzini/talker-manager-express-api',
@@ -37,12 +46,12 @@ export const projects = [
     videoUrl: 'https://www.youtube.com/embed/JSxDvSl0ceA',
     imgSrc: dragHero
   },
-  {
-    title: 'Solar System',
-    description: 'Simple landing page, made with React, about space missions in our solar system. All animations were made using pure CSS, to explore its possibilities.',
-    gitHubUrl: 'https://github.com/jfzini/solar-system',
-    deployedUrl: 'https://solar-system-rho-lac.vercel.app/',
-    videoUrl: 'https://www.youtube.com/embed/4GuyL_BArd8',
-    imgSrc: solarHero
-  },
+  // {
+  //   title: 'Solar System',
+  //   description: 'Simple landing page, made with React, about space missions in our solar system. All animations were made using pure CSS, to explore its possibilities.',
+  //   gitHubUrl: 'https://github.com/jfzini/solar-system',
+  //   deployedUrl: 'https://solar-system-rho-lac.vercel.app/',
+  //   videoUrl: 'https://www.youtube.com/embed/4GuyL_BArd8',
+  //   imgSrc: solarHero
+  // },
 ]
