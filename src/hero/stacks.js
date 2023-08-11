@@ -18,6 +18,7 @@ import mochaIcon from '../images/stacks/mocha.png'
 import chaiIcon from '../images/stacks/chai.png'
 import sinonIcon from '../images/stacks/sinon.png'
 import sassIcon from '../images/stacks/sass.png'
+import viteIcon from '../images/stacks/vite.png'
 
 export const stacks = [
   {
@@ -43,6 +44,10 @@ export const stacks = [
   {
     name: 'Git',
     icon: gitIcon
+  },
+  {
+    name: 'Vite',
+    icon: viteIcon
   },
   {
     name: 'React',
