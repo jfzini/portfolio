@@ -42,10 +42,10 @@ export default function HeaderPortfolio() {
               <a href="#hero">Home</a>
             </li>
             <li className="appear slide-down">
-              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
             </li>
             <li className="appear slide-down">
-              <a href="#projects">Projects</a>
+              <a href="#about">About</a>
             </li>
             <li className="appear slide-down">
               <a href="#contact">Contact</a>

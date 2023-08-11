@@ -1,8 +1,8 @@
-import recipesHero from '../images/projects/recipes-hero.png';
-import snippetsHero from '../images/projects/snippets-hero.png';
-import managerHero from '../images/projects/manager-hero.png';
-import dragHero from '../images/projects/drag-hero.png';
-import solarHero from '../images/projects/solar-system-hero.png';
+import recipesHero from '../../images/projects/recipes-hero.png';
+import snippetsHero from '../../images/projects/snippets-hero.png';
+import managerHero from '../../images/projects/manager-hero.png';
+import dragHero from '../../images/projects/drag-hero.png';
+import solarHero from '../../images/projects/solar-system-hero.png';
 
 export const projects = [
   {
