@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import HeaderPortfolio from './header/Header'
-import Hero from './hero/Hero'
-import About from './about/About'
-import ProjectsCarousel from './projects/ProjectsCarousel'
-import Projects from './projects/Projects'
-import Contact from './contact/Contact'
-import Sidebar from './sidebar/Sidebar'
+import HeaderPortfolio from './components/header/Header'
+import Hero from './components/hero/Hero'
+import About from './components/about/About'
+import ProjectsCarousel from './components/projects/ProjectsCarousel'
+import Projects from './components/projects/Projects'
+import Contact from './components/contact/Contact'
+import Sidebar from './components/sidebar/Sidebar'
 
 function App() {
 
@@ -13,8 +13,8 @@ function App() {
     <>
       <HeaderPortfolio/>
       <Hero/>
-      <About/>
       <Projects/>
+      <About/>
       <Contact/>
       <Sidebar/>
     </>

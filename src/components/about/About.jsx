@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './About.sass';
 import AOS from 'aos';
-import laptopImg from '../images/coffee-laptop.jpeg';
+import laptopImg from '../../images/coffee-laptop.jpeg';
 import 'aos/dist/aos.css';
 
 export default function About() {
@@ -10,7 +10,7 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" className="section__container section__container--even">
+    <section id="about" className="section__container section__container--odd">
       <h2 data-aos="fade-down">{'<About me />'}</h2>
       <article className="article__container">
         <div data-aos="fade-right" className="image__container">

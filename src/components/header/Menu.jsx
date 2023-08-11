@@ -43,14 +43,14 @@ export default function BasicMenu() {
             Home
           </MenuItem>
         </Link>
-        <Link href='#about' underline='none' color='inherit'>
-          <MenuItem onClick={handleClose}>
-            About
-          </MenuItem>
-        </Link>
         <Link href='#projects' underline='none' color='inherit'>
           <MenuItem onClick={handleClose}>
             Projects
+          </MenuItem>
+        </Link>
+        <Link href='#about' underline='none' color='inherit'>
+          <MenuItem onClick={handleClose}>
+            About
           </MenuItem>
         </Link>
         <Link href='#contact' underline='none' color='inherit'>

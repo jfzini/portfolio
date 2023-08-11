@@ -8,7 +8,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" className="section__container section__container--odd">
+    <section id="projects" className="section__container section__container--even">
       <h2 data-aos="fade-down">{'<Projects />'}</h2>
       <article className="article__container">
         <div className="article__content" data-aos="fade-right">

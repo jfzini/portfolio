@@ -1,15 +1,8 @@
 import React from 'react';
 import './Hero.sass';
-import heroImg from '../images/logo-zini.png';
-import cssImg from '../images/stacks/css.png';
-import htmlImg from '../images/stacks/html.png';
-import javascriptImg from '../images/stacks/javascript.png';
-import jestImg from '../images/stacks/jest.png';
-import reactImg from '../images/stacks/react.png';
-import gitImg from '../images/stacks/git.png';
-import RTLImg from '../images/stacks/rtl.png';
+import heroImg from '../../images/logo-zini.png';
 import { stacks } from './stacks';
-import StackImg from './StackImg';
+import Stack from './Stack';
 
 export default function Hero() {
   return (
@@ -33,7 +26,7 @@ export default function Hero() {
           </p>
           <div className="stacks">
             {stacks.map(({name, icon}) => (
-              <StackImg src={icon} alt={name} key={name} />
+              <Stack src={icon} alt={name} key={name} />
             ))}
           </div>
         </div>
