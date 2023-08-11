@@ -6,13 +6,13 @@ import AOS from 'aos';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/effect-fade';
+import 'swiper/css/effect-creative';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './ProjectsCarousel.sass';
 
 // import required modules
-import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, EffectCreative, Navigation, Pagination } from 'swiper/modules';
 import { projects } from './projectsData';
 
 export default function ProjectsCarousel() {
@@ -22,6 +22,17 @@ export default function ProjectsCarousel() {
 
   return (
     <Swiper
+      effect={'creative'}
+      creativeEffect={{
+        prev: {
+          shadow: true,
+          translate: [0, 0, -400],
+        },
+        next: {
+          shadow: true,
+          translate: ['100%', 0, 0],
+        },
+      }}
       style={{
         '--swiper-navigation-color': '#fff',
         '--swiper-pagination-color': '#fff',
@@ -32,7 +43,7 @@ export default function ProjectsCarousel() {
       pagination={{
         clickable: true,
       }}
-      modules={[Autoplay, EffectFade, Navigation, Pagination]}
+      modules={[Autoplay, EffectCreative, Navigation, Pagination]}
       autoplay={{
         delay: 10000,
         disableOnInteraction: true,
