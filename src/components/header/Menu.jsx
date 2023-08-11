@@ -5,8 +5,10 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Close } from '@mui/icons-material';
 import { Link, ListItemText } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 export default function BasicMenu() {
+  const { t } = useTranslation();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -45,17 +47,17 @@ export default function BasicMenu() {
         </Link>
         <Link href='#projects' underline='none' color='inherit'>
           <MenuItem onClick={handleClose}>
-            Projects
+            {t('Projects')}
           </MenuItem>
         </Link>
         <Link href='#about' underline='none' color='inherit'>
           <MenuItem onClick={handleClose}>
-            About
+            {t('About')}
           </MenuItem>
         </Link>
         <Link href='#contact' underline='none' color='inherit'>
           <MenuItem onClick={handleClose}>
-            Contact
+            {t('Contact')}
           </MenuItem>
         </Link>
       </Menu>
