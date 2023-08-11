@@ -4,4 +4,4 @@ This is a portfolio that is constantly being updated as I develop my skills, get
 
 ## Deploy
 
-Check out the deployed version [here](https://jfzini.github.io/).
+Check out the deployed version [here](https://jfzini-dev.vercel.app/).
