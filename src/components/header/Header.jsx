@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Header.sass';
-import { Button } from '@mui/material';
 import BasicMenu from './Menu';
-import { GitHub, LinkedIn } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
 import LangSwitcher from './LangSwitcher';
 

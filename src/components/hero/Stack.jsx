@@ -1,5 +1,4 @@
-import React from 'react';
-
+import PropTypes from "prop-types"
 export default function Stack({ src, alt }) {
   return (
     <div className="stack__container">
@@ -7,4 +6,9 @@ export default function Stack({ src, alt }) {
       <div className="stack__title">{alt}</div>
     </div>
   );
+}
+
+Stack.propTypes = {
+  alt: PropTypes.string,
+  src: PropTypes.any
 }

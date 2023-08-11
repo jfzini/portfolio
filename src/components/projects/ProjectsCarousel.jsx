@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { GitHub, OpenInNew } from '@mui/icons-material';
 import AOS from 'aos';
@@ -51,7 +51,7 @@ export default function ProjectsCarousel() {
       loop={true}
       className="mySwiper"
     >
-      {projects.map(({ title, description, gitHubUrl, deployedUrl, videoUrl, imgSrc }) => {
+      {projects.map(({ title, description, gitHubUrl, deployedUrl, imgSrc }) => {
         return (
           <SwiperSlide key={title} className="swiper-slide">
             <img src={imgSrc} alt={title} className="carousel__img" />
@@ -59,11 +59,11 @@ export default function ProjectsCarousel() {
               <h4 className="project__title">{t(title)}</h4>
               <p className="project__description">{t(description)}</p>
               <div className="project__nav">
-                <a href={gitHubUrl} target="_blank">
+                <a href={gitHubUrl} target="_blank" rel="noreferrer">
                   <GitHub fontSize="inherit" />
                 </a>
                 {deployedUrl ? (
-                  <a href={deployedUrl} target="_blank">
+                  <a href={deployedUrl} target="_blank" rel="noreferrer">
                     <OpenInNew fontSize="inherit" />
                   </a>
                 ) : (

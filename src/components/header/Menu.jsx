@@ -4,7 +4,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Close } from '@mui/icons-material';
-import { Link, ListItemText } from '@mui/material';
+import { Link } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
 export default function BasicMenu() {

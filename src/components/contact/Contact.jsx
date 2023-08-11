@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.sass';
 import { Button, TextField } from '@mui/material';
@@ -17,7 +17,7 @@ export default function Contact() {
     e.preventDefault();
     emailjs
       .sendForm('service_oknbaig', 'template_r9lgnro', form.current, 'SyGNesskWg3yxFHqL')
-      .then((result) => {
+      .then(() => {
         e.target.reset();
       }, (error) => {
         console.log(error.text);

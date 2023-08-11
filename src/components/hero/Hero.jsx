@@ -1,4 +1,3 @@
-import React from 'react';
 import './Hero.sass';
 import heroImg from '../../images/logo-zini.png';
 import { stacks } from './stacks';

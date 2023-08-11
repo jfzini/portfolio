@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './About.sass';
 import AOS from 'aos';
 import laptopImg from '../../images/coffee-laptop.jpeg';

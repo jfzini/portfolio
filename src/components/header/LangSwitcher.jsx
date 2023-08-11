@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import flagBR from '../../images/lang/br.png';
 import flagUSA from '../../images/lang/usa.png';
 
 export default function LangSwitcher() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const [language, setLanguage] = useState(navigator.language);
 
   const changeLanguage = (code) => {
