@@ -25,13 +25,7 @@ export default function About() {
         </div>
         <div className="article__content" data-aos="fade-left">
           <p>
-          {t("Hello, my name is João Felipe Zini Hespanhol, and I'm passionate about technology. I've always had an affinity for the field, but I grew up in a conservative environment that limited my career options. As a result, I was directed to study Law, just like my father.")}
-          </p>
-          <p>
-          {t("My academic journey in law was marked by excellence, allowing me to solve various problems and explore new areas. However, even though I achieved some stability, Law didn't provide me with a sense of professional fulfillment.")}
-          </p>
-          <p>
-          {t("To change this, I planned a transition to my true passion: software development. I acquired technical skills in various technologies, both in Front-end and Back-end, and I'm eager to embark on this new journey with enthusiasm and dedication.")}
+          {t("Hello, my name is João Felipe Zini Hespanhol, and I'm passionate about technology. I've always had an affinity for the field, but, previously, I got a master degree in Law. After that, I decided to change my career and started my path in the techworld. I'm currently a full-stack developer at Sem Processo S/A and have developed full-stack applications using React, Node.js, and MongoDB. I also was a part of the team that developed a solution using AI to the Brazilian Supreme Court.")}
           </p>
         </div>
       </article>
