@@ -21,6 +21,9 @@ import sassIcon from '../../images/stacks/sass.png';
 import viteIcon from '../../images/stacks/vite.png';
 import i18nIcon from '../../images/stacks/i18next.png';
 import sequelizeIcon from '../../images/stacks/sequelize.png';
+import mongoIcon from '../../images/stacks/mongo.png';
+import pythonIcon from '../../images/stacks/python.png';
+import llamaIcon from '../../images/stacks/llama.png';
 
 export const stacks = [
   {
@@ -44,6 +47,10 @@ export const stacks = [
     icon: tsIcon,
   },
   {
+    name: 'Python',
+    icon: pythonIcon,
+  },
+  {
     name: 'Git',
     icon: gitIcon,
   },
@@ -60,14 +67,6 @@ export const stacks = [
     icon: reduxIcon,
   },
   {
-    name: 'Angular',
-    icon: angularIcon,
-  },
-  {
-    name: 'Bootstrap',
-    icon: bootstrapIcon,
-  },
-  {
     name: 'Material UI',
     icon: muiIcon,
   },
@@ -76,12 +75,12 @@ export const stacks = [
     icon: i18nIcon,
   },
   {
-    name: 'Node.js',
-    icon: nodeIcon,
+    name: 'LlamaIndex',
+    icon: llamaIcon,
   },
   {
-    name: 'Express.js',
-    icon: expressIcon,
+    name: 'Node.js',
+    icon: nodeIcon,
   },
   {
     name: 'Docker',
@@ -94,6 +93,10 @@ export const stacks = [
   {
     name: 'Sequelize',
     icon: sequelizeIcon,
+  },
+  {
+    name: 'MongoDB',
+    icon: mongoIcon,
   },
   {
     name: 'Jest',

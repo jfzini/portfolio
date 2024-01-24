@@ -3,8 +3,7 @@ import snippetsHero from '../../images/projects/snippets-hero.png';
 import talkerManagerHero from '../../images/projects/talker-manager-hero.png';
 import storeManagerHero from '../../images/projects/store-manager-hero.png';
 import dragHero from '../../images/projects/drag-hero.png';
-// import solarHero from '../../images/projects/solar-system-hero.png';
-import walletHero from '../../images/projects/wallet-hero.png';
+import splabsHero from '../../images/projects/splabs-hero.png';
 
 export const projects = [
   {
@@ -26,13 +25,13 @@ export const projects = [
     imgSrc: snippetsHero,
   },
   {
-    title: 'Trip Wallet',
+    title: 'SP Labs',
     description:
-      'This project is a simulation of a wallet, where you can add expenses, convert the spent currencies to Brazilian Real, and view a table with the total expenses. The development was carried out using Redux, React, React Router, and Middlewares for handling asynchronous actions. The tests were developed with React Testing Library.',
-    gitHubUrl: 'https://github.com/jfzini/trip-wallet',
-    deployedUrl: 'https://trip-wallet-project.vercel.app/',
+      'This project consists of the creation of a Landing Page with Chatbot for the product SP Labs',
+    gitHubUrl: 'https://github.com/jfzini/sp_labs_landingpage',
+    deployedUrl: 'https://sp-labs-landingpage.vercel.app/',
     videoUrl: '',
-    imgSrc: walletHero,
+    imgSrc: splabsHero,
   },
   {
     title: 'Talker Manager',
